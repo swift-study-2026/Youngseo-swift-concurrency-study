@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = UINavigationController(
-            rootViewController: ViewController()
+            rootViewController: GalleryViewController()
         )
         window.makeKeyAndVisible()
         

@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3A801E2C2FD80801004F5E98 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3A801E2B2FD80801004F5E98 /* SnapKit */; };
+		3A801E2F2FD8080F004F5E98 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 3A801E2E2FD8080F004F5E98 /* Then */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3A801E0A2FD3F8AB004F5E98 /* ConcurrencyStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcurrencyStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A801E2C2FD80801004F5E98 /* SnapKit in Frameworks */,
+				3A801E2F2FD8080F004F5E98 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = ConcurrencyStudy;
 			packageProductDependencies = (
+				3A801E2B2FD80801004F5E98 /* SnapKit */,
+				3A801E2E2FD8080F004F5E98 /* Then */,
 			);
 			productName = ConcurrencyStudy;
 			productReference = 3A801E0A2FD3F8AB004F5E98 /* ConcurrencyStudy.app */;
@@ -107,6 +116,10 @@
 			);
 			mainGroup = 3A801E012FD3F8AB004F5E98;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3A801E2A2FD80801004F5E98 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				3A801E2D2FD8080F004F5E98 /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3A801E0B2FD3F8AB004F5E98 /* Products */;
 			projectDirPath = "";
@@ -200,6 +213,8 @@
 		};
 		3A801E202FD3F8AC004F5E98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 3A801E0C2FD3F8AB004F5E98 /* ConcurrencyStudy */;
+			baseConfigurationReferenceRelativePath = Debug.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -263,6 +278,8 @@
 		};
 		3A801E212FD3F8AC004F5E98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 3A801E0C2FD3F8AB004F5E98 /* ConcurrencyStudy */;
+			baseConfigurationReferenceRelativePath = Debug.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -339,6 +356,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A801E2A2FD80801004F5E98 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		3A801E2D2FD8080F004F5E98 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A801E2B2FD80801004F5E98 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A801E2A2FD80801004F5E98 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		3A801E2E2FD8080F004F5E98 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A801E2D2FD8080F004F5E98 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3A801E022FD3F8AB004F5E98 /* Project object */;
 }
